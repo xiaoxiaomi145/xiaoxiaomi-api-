@@ -90,6 +90,8 @@ try { db.exec("ALTER TABLE models ADD COLUMN alias TEXT DEFAULT '';"); } catch (
 const insertSetting = db.prepare('INSERT OR IGNORE INTO settings (key, value) VALUES (?, ?)');
 insertSetting.run('log_retention_days', '30');
 insertSetting.run('default_user_points', '1000');
+insertSetting.run('daily_reset_points', '0');
+insertSetting.run('last_daily_reset', '1970-01-01');
 insertSetting.run('system_name', 'xiaoxiaomi的小破站');
 insertSetting.run('api_key_prefix', 'sk-');
 insertSetting.run('smtp_host', process.env.SMTP_HOST || '');
