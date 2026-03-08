@@ -1,4 +1,4 @@
-# AI Studio - User & Admin Guide
+# User & Admin Guide
 
 Welcome to the AI Studio! This guide will help you understand how to use the platform, whether you are a regular user or a system administrator.
 
@@ -88,4 +88,3 @@ Authorization: Bearer YOUR_API_KEY
 }
 ```
 
-Enjoy using AI Studio!
